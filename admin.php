@@ -84,12 +84,12 @@
 				</table>
 				<?php
 
-				$do = $_GET['do'] ?? 'main';
+				$do = $_GET['do'] ?? 'title';
 				$file = "./backend/{$do}.php";
 				if (file_exists($file)) {
 					include $file;
 				} else {
-					include "./backend/main.php";
+					include "./backend/title.php";
 				}
 
 				?>
