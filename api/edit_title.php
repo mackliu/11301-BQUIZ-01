@@ -15,4 +15,4 @@ foreach ($_POST['id'] as $key => $id) {
     }
 }
 
-header("location:../admin.php?do=title");
+to("../admin.php?do=title");
