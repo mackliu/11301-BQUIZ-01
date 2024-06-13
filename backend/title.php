@@ -12,8 +12,7 @@
                 </tr>
                 <?php
 
-                //$rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
-                $rows = q("select * from title");
+                $rows = $Title->all();
                 foreach ($rows as $row) {
 
                 ?>

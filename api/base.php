@@ -112,13 +112,6 @@ class DB
 
 
 
-
-
-
-
-
-
-
 function q($sql)
 {
     $dsn = "mysql:host=localhost;charset=utf8;dbname=db15";
@@ -141,4 +134,3 @@ function dd($array)
 
 
 $Title = new DB('title');
-dd($Titile->all(['id' => 1]));
