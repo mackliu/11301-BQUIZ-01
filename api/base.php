@@ -73,6 +73,8 @@ class DB
         } else {
             $sql .= " where `id`='$arg'";
         }
+
+        return $this->pdo->exec($sql);
     }
 
     public function count(...$arg)
